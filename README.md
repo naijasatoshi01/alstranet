@@ -1,4 +1,4 @@
-# AlstraNet: Ethereum ZK Rollup - README
+# AlstraNet
 
 ## Introduction
 
@@ -42,7 +42,7 @@ This README provides an overview of the project's technical aspects. We use a mo
 
 - **Relayer:** Acts as an intermediary between the off-chain ZK Rollup network and Ethereum Layer 1 (L1) contracts.
 
-### 3. Ethereum ZK Rollup P2P Network Protocol
+### 3. P2P Network Protocol
 
 - **Protocol Version:** 1.0
 
