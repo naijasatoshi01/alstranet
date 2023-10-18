@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Welcome to the AlstraNet project, a cutting-edge Ethereum Zero-Knowledge (ZK) Rollup solution. AlstraNet is designed to enhance Ethereum's scalability, security, and privacy while maintaining decentralization.
+Welcome to the AlstraNet project, a Zero-Knowledge (ZK) Rollup solution. AlstraNet is designed to enhance blockchain scalability, security, and privacy while maintaining decentralization.
 
 ## Project Structure
 
-This README provides an overview of the project's technical aspects, following the Ethereum ZK Rollup Technical Specification. We use a monorepo project structure, TypeScript for development, Hardhat for smart contract development, and Docker for containerization.
+This README provides an overview of the project's technical aspects. We use a monorepo project structure, TypeScript for development, Hardhat for smart contract development, and Docker for containerization.
 
 ### 1. Core Infrastructure
 
@@ -14,7 +14,7 @@ This README provides an overview of the project's technical aspects, following t
 
 ##### Rollup Smart Contracts
 
-- **Rollup Manager Contract:** Manages the state and interactions within the Ethereum ZK Rollup. It tracks user balances, contract states, and data availability using a Merkle tree.
+- **Rollup Manager Contract:** Manages the state and interactions within the ZK Rollup. It tracks user balances, contract states, and data availability using a Merkle tree.
 
 - **Verifier Contract:** Specializes in verifying cryptographic proofs (e.g., zk-SNARKs) for off-chain transactions and state transitions.
 
@@ -85,6 +85,15 @@ We welcome contributions from the community. Please refer to our contribution gu
 ## Support
 
 For questions, issues, or support, please contact our team or create an issue in the project repository.
+## Donate
+
+If you find AlstraNet valuable and would like to support our project, you can make donations in Bitcoin (BTC) and Ethereum (ETH) to the following wallet addresses:
+
+- Bitcoin (BTC):
+  - Wallet Address: `bc1qe5apr7222ksw03pdd42kf2588aaewxlukyg5sv`
+
+- Ethereum (ETH):
+  - Wallet Address: `0xDEf84737126AECBE617634f0009d2827b3860a62`
 
 ## License
 
