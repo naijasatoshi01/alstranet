@@ -1,102 +1,64 @@
 # AlstraNet
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Overview](#overview)
+- [Objectives](#objectives)
+- [Architecture](#architecture)
+  - [Components](#components)
+  - [On-Chain (Layer 1) Contracts](#on-chain-layer-1-contracts)
+  - [Off-Chain (Layer 2) Environment](#off-chain-layer-2-environment)
+  - [BPM Contracts](#bpm-contracts)
+- [Getting Started](#getting-started)
+- [License](#license)
+
 ## Introduction
 
-Welcome to the AlstraNet project, a Zero-Knowledge (ZK) Rollup solution. AlstraNet is designed to enhance blockchain scalability, security, and privacy while maintaining decentralization.
+**AlstraNet** is a comprehensive Business Process Management (BPM) solution designed to seamlessly integrate with EVM-compatible blockchains. This README provides an overview of the AlstraNet project, including its objectives, architecture, key functions, security measures, deployment, and more.
 
-## Project Structure
+## Overview
 
-This README provides an overview of the project's technical aspects. We use a monorepo project structure, TypeScript for development, Hardhat for smart contract development, and Docker for containerization.
+AlstraNet provides a unified and innovative approach to BPM by combining both on-chain (Layer 1 or L1) and off-chain (Layer 2 or L2) components. It is designed to meet the evolving needs of modern businesses by offering a secure, scalable, and private platform.
 
-### 1. Core Infrastructure
+## Objectives
 
-#### 1.1 On-Chain Contracts
+The primary objectives of AlstraNet are as follows:
+- Create a scalable BPM solution that ensures data security and privacy.
+- Seamlessly integrate BPM contracts within the Layer 2 (L2) environment.
+- Provide a reliable platform for a wide range of BPM-related functions.
 
-##### Rollup Smart Contracts
+## Architecture
 
-- **Rollup Manager Contract:** Manages the state and interactions within the ZK Rollup. It tracks user balances, contract states, and data availability using a Merkle tree.
+### Components
 
-- **Verifier Contract:** Specializes in verifying cryptographic proofs (e.g., zk-SNARKs) for off-chain transactions and state transitions.
+AlstraNet's architecture comprises the following key components:
+- On-Chain (Layer 1) Contracts: These contracts form the foundation of data availability, decentralization, and data integrity.
+- Off-Chain (Layer 2) Environment: This environment includes Sequencers, Executors, Provers, a Validator Network, and Relayers, which work together to optimize BPM transaction processing and ensure data privacy.
 
-- **Data Availability Contract:** Ensures data availability using a Merkle tree and tracks the availability of transaction and state data.
+### On-Chain (Layer 1) Contracts
 
-#### 1.2 Off-Chain Virtual Machine: Execution Engine
+On-chain contracts in AlstraNet are responsible for critical functions such as data availability, decentralization, verification, data integrity, and interoperability between Layer 2 and other components.
 
-- Utilizes zkEVM for transaction processing, offering privacy-preserving computations and efficient verification of smart contract code.
+### Off-Chain (Layer 2) Environment
 
-- Responsible for executing user transactions, maintaining off-chain state, creating batches of transactions, and generating Merkle roots.
+The off-chain environment in AlstraNet includes Sequencers, Executors, Provers, a Validator Network, and Relayers, all of which collaborate to optimize BPM transaction processing and ensure data privacy.
 
-- Ensures data availability and validation through zero-knowledge proofs (zk-SNARKs or zk-STARKs).
+### BPM Contracts
 
-- Submits validated batches to the Rollup Manager Contract on Ethereum Layer 1 (L1).
+All BPM contracts are exclusively deployed and executed within the Layer 2 environment (Executor) of AlstraNet, streamlining BPM processes, ensuring efficiency, and providing data privacy.
 
-### 2. Decentralized Network Architecture
-
-- **Sequencers:** Independently operate to collect and sequence transactions, organizing them for off-chain execution.
-
-- **Executors:** Execute transactions within batches off-chain, adhering to Rollup rules.
-
-- **Provers:** Collaborate with Sequencers to generate efficient zero-knowledge proofs.
-
-- **Validator Network:** Forms a decentralized network to validate transactions and proofs.
-
-- **Relayer:** Acts as an intermediary between the off-chain ZK Rollup network and Ethereum Layer 1 (L1) contracts.
-
-### 3. P2P Network Protocol
-
-- **Protocol Version:** 1.0
-
-- Network involves Sequencers, Executors, Provers, Validators, and Relayers.
-
-- Structured data exchange format and message format for efficient communication.
-
-- Operations include discovery, data propagation, data validation, data relaying, L1 submission, data availability, governance, and monitoring.
-
-### Protocol Events
-
-1. Node Discovery and Connection
-2. Transaction Broadcasting
-3. Proof Generation
-4. Proof Validation
-5. State Update Propagation
-6. Data Relaying for L1 Submission
-7. Submission to Layer 1 (L1)
-8. Data Availability and Monitoring
-9. Governance and Upgradability
 
 ## Getting Started
 
-To get started with AlstraNet, follow these steps:
+To get started with AlstraNet
+### 1. Clone the Repository
 
-1. Clone the AlstraNet repository from our monorepo.
-
-2. Navigate to the project's root directory and install the required dependencies using NPM.
-
-3. Set up the Ethereum development environment using Hardhat and Docker.
-
-4. Run the provided scripts for deploying smart contracts and starting the ZK Rollup network.
-
-5. Interact with the network and contribute to its development.
-
-## Contributing
-
-We welcome contributions from the community. Please refer to our contribution guidelines in the project repository for details on how to get involved.
-
-## Support
-
-For questions, issues, or support, please contact our team or create an issue in the project repository.
-## Donate
-
-If you find AlstraNet valuable and would like to support our project, you can make donations in Bitcoin (BTC) and Ethereum (ETH) to the following wallet addresses:
-
-- Bitcoin (BTC):
-  - Wallet Address: `bc1qe5apr7222ksw03pdd42kf2588aaewxlukyg5sv`
-
-- Ethereum (ETH):
-  - Wallet Address: `0xDEf84737126AECBE617634f0009d2827b3860a62`
-
+```bash
+git clone https://github.com/naijasatoshi01/alstranet.git
+cd alstranet
+npm install
+```
 ## License
 
-AlstraNet is open-source software licensed under the [MIT License](LICENSE.md). We encourage collaboration and contributions from the community.
-
-Thank you for joining us on this journey to enhance Ethereum's scalability and security through AlstraNet!
+This project is licensed under the [MIT License](./LICENSE).

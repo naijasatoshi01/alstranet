@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "start": "npx tsdx watch",
+        "build": "npx tsdx build",
+        "test": "npx tsdx test",
+        "lint": "npx tsdx lint",
+        "prepare": "npx tsdx build",
+        "size": "size-limit",
+        "analyze": "size-limit --why"
+    },
+    "peerDependencies": {},
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsdx lint"
+        }
+    },
+    "prettier": {
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "es5"
+    },
+    "name": "consensus",
+    "author": "Fedha",
+    "module": "dist/consensus.esm.js",
+    "size-limit": [
+        {
+            "path": "dist/consensus.cjs.production.min.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/consensus.esm.js",
+            "limit": "10 KB"
+        }
+    ]
+}
